@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 import Bio from "@/components/Sections/Bio";
 import OnTheWeb from "@/components/Sections/OnTheWeb";
-import Work from "@/components/Sections/Work";
+import Work from "@/components/Sections/Works";
 import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (

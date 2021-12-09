@@ -11,7 +11,7 @@
 }
 @layer components {
   .btn {
-    @apply px-2 py-2 rounded-lg  transition-colors duration-150 flex items-center justify-center;
+    @apply px-2 py-2 rounded-md  transition-colors duration-150 inline-flex items-center justify-center shadow-md;
   }
   .btn-lg {
     @apply px-6 py-4 text-xl;
@@ -28,5 +28,5 @@
   }
 }
 html {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  /* font-family: "M PLUS Rounded 1c", sans-serif; */
 }

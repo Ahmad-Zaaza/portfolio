@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 const MainLayout: NextPage = ({ children }) => {
   return (
-    <main className="bg-yellow-50 dark:bg-gray-900 h-screen">
+    <main className="bg-yellow-50 dark:bg-gray-900 h-screen font-body">
       <Head>
         <title>Ahmad Zaaza | Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,8 +31,10 @@ const MainLayout: NextPage = ({ children }) => {
       </Head>
       <Navbar />
       <div className="h-64"></div>
-      <div className={`container ${MAX_WIDTH} pt-16 pb-8`}>{children}</div>
-      <Footer />
+      <div className={`container ${MAX_WIDTH} pt-16 pb-8`}>
+        {children}
+        <Footer />
+      </div>
     </main>
   );
 };
