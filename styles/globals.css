@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .underline-offset-6 {
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-2 py-2 rounded-lg  transition-colors duration-150 flex items-center justify-center;
+  }
+  .btn-lg {
+    @apply px-6 py-4 text-xl;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-light text-white;
+  }
+  .bio-year {
+    @apply font-bold flex-nowrap whitespace-nowrap;
+  }
+
+  .bio-section {
+    @apply mb-2;
+  }
+}
+html {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}

@@ -1,0 +1,20 @@
+import Section from "@/components/Section";
+import SectionTitle from "@/components/Section/SectionTitle";
+
+const Work = () => {
+  return (
+    <Section>
+      <SectionTitle underline>Work</SectionTitle>
+      <p>
+        Ahmad Zaaza is a self taught web developer based in Dubai, UAE with a
+        passion for building user interfaces.
+      </p>
+      <p>
+        He originally studied dentistry, but when he first came in touch with
+        code
+      </p>
+    </Section>
+  );
+};
+
+export default Work;
