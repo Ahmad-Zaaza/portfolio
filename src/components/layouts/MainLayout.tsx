@@ -1,6 +1,7 @@
 import { MAX_WIDTH } from "@/lib/constants";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../Footer";
 import Navbar from "../Navbar";
 const MainLayout: NextPage = ({ children }) => {
   return (
@@ -30,7 +31,8 @@ const MainLayout: NextPage = ({ children }) => {
       </Head>
       <Navbar />
       <div className="h-64"></div>
-      <div className={`container ${MAX_WIDTH} pt-16`}>{children}</div>
+      <div className={`container ${MAX_WIDTH} pt-16 pb-8`}>{children}</div>
+      <Footer />
     </main>
   );
 };
