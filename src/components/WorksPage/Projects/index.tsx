@@ -12,13 +12,15 @@ const Projects = () => {
           thumbnail={sweetatLogo}
           description="Sweets shop"
           title="Sweetat"
-          link="https://sweetat.co"
+          // link="https://sweetat.co"
+          link="/works/sweetat"
         />
         <ProjectCard
           thumbnail={mrglogo}
           description="E commerce"
           title="MRG"
-          link="https://mrg-mall.com"
+          // link="https://mrg-mall.com"
+          link="/works/mrg"
         />
       </div>
     </Section>

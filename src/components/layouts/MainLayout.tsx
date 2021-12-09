@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 const MainLayout: NextPage = ({ children }) => {
   return (
-    <main className="bg-yellow-50 dark:bg-gray-900 h-screen font-body">
+    <main className="bg-yellow-50 dark:bg-gray-900 min-h-screen font-body">
       <Head>
         <title>Ahmad Zaaza | Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

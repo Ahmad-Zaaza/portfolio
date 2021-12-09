@@ -12,7 +12,8 @@ const Collaborations = () => {
           thumbnail={hissahLogo}
           description="Hissah is an educational platform, where students can find online tutors "
           title="Hissah"
-          link="https://www.hissah.com/"
+          // link="https://www.hissah.com/"
+          link="/works/hissah"
         />
       </div>
     </Section>

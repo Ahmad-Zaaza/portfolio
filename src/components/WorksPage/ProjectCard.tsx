@@ -16,7 +16,7 @@ const ProjectCard = ({
   return (
     <div className="hover:-translate-y-1  transition-transform ease-in-out duration-300">
       <Link href={link} passHref>
-        <a target="_blank" rel="noreferrer">
+        <a>
           <Image src={thumbnail} alt="title" className="rounded-lg" />
 
           <h3 className="text-gray-900 font-system  text-xl  text-center">
