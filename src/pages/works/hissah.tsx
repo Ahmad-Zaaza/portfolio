@@ -1,11 +1,11 @@
 import WorkLayout from "@/components/layouts/WorkLayout";
-import Section from "@/components/Section";
 import SectionTitle from "@/components/Section/SectionTitle";
 import { Meta, WorkTitle, WorkYear } from "@/components/Work/work";
 import hissah1 from "../../../public/images/hissah1.png";
 import hissah2 from "../../../public/images/hissah2.png";
-
 import Image from "next/image";
+import { GoLinkExternal } from "react-icons/go";
+
 const Mrg = () => {
   return (
     <WorkLayout title="Hissah">
@@ -21,7 +21,7 @@ const Mrg = () => {
         <li className="flex items-center">
           <Meta>Website</Meta>
           <a className="ml-4 text-primary" href="https://sweetat.co">
-            https://hissah.com
+            https://hissah.com <GoLinkExternal className="inline" />
           </a>
         </li>
         <li className="flex items-center">
@@ -31,13 +31,12 @@ const Mrg = () => {
           </p>
         </li>
       </ul>
-      <Section>
-        <SectionTitle underline>Gallery</SectionTitle>
-        <div className="grid grid-cols-1 gap-8 mt-8">
-          <Image src={hissah1} className="rounded" />
-          <Image src={hissah2} className="rounded" />
-        </div>
-      </Section>
+
+      <SectionTitle underline>Gallery</SectionTitle>
+      <div className="grid grid-cols-1 gap-8 mt-8">
+        <Image src={hissah1} className="rounded" alt="hissah preview" />
+        <Image src={hissah2} className="rounded" alt="hissah preview" />
+      </div>
     </WorkLayout>
   );
 };

@@ -3,7 +3,7 @@ import SectionTitle from "@/components/Section/SectionTitle";
 
 const Bio = () => {
   return (
-    <Section>
+    <Section delay={0.2}>
       <SectionTitle underline>Bio</SectionTitle>
       <div className="bio-section">
         <span className="bio-year">1994</span>

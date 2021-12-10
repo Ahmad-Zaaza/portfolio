@@ -1,11 +1,11 @@
 import WorkLayout from "@/components/layouts/WorkLayout";
-import Section from "@/components/Section";
 import SectionTitle from "@/components/Section/SectionTitle";
 import { Meta, WorkTitle, WorkYear } from "@/components/Work/work";
 import mrg1 from "../../../public/images/mrg1.png";
 import mrg2 from "../../../public/images/mrg2.png";
 import mrg3 from "../../../public/images/mrg3.png";
 import mrg4 from "../../../public/images/mrg4.png";
+import { GoLinkExternal } from "react-icons/go";
 
 import Image from "next/image";
 const Mrg = () => {
@@ -22,7 +22,7 @@ const Mrg = () => {
         <li className="flex items-center">
           <Meta>Website</Meta>
           <a className="ml-4 text-primary" href="https://sweetat.co">
-            https://mrg-mall.co
+            https://mrg-mall.co <GoLinkExternal className="inline" />
           </a>
         </li>
         <li className="flex items-center">
@@ -30,17 +30,16 @@ const Mrg = () => {
           <p className="ml-4 inline">React, Laravel, PostgreSQL. </p>
         </li>
       </ul>
-      <Section>
-        <SectionTitle underline>Gallery</SectionTitle>
-        <div className="grid grid-cols-1 gap-8 mt-8">
-          <Image src={mrg1} className="rounded" />
-          <Image src={mrg2} className="rounded" />
-          <div className="grid grid-cols-2 gap-4">
-            <Image src={mrg3} className="rounded" />
-            <Image src={mrg4} className="rounded" />
-          </div>
+
+      <SectionTitle underline>Gallery</SectionTitle>
+      <div className="grid grid-cols-1 gap-8 mt-8">
+        <Image src={mrg1} className="rounded" alt="mrg-preview" />
+        <Image src={mrg2} className="rounded" alt="mrg-preview" />
+        <div className="grid grid-cols-2 gap-4">
+          <Image src={mrg3} className="rounded" alt="mrg-preview" />
+          <Image src={mrg4} className="rounded" alt="mrg-preview" />
         </div>
-      </Section>
+      </div>
     </WorkLayout>
   );
 };

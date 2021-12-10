@@ -4,7 +4,7 @@ const animation = require("./styles/animations/animations");
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -13,9 +13,20 @@ module.exports = {
     extend: {
       animation,
       keyframes,
-      colors: {
-        primary: "#1397CC",
-        "primary-light": "#56bfe2"
+      textColor: {
+        primary: "var(--text-primary)",
+        "primary-inverted": "var(--text-primary-inverted)"
+      },
+      backgroundColor: {
+        primary: "var(--bg-color)",
+        "fill-primary": "var(--fill-primary)",
+        "fill-secondary": "var(--fill-secondary)",
+        nav: ({ opacityValue }) => {
+          if (opacityValue) {
+            return `rgba(var(--nav-color), ${opacityValue})`;
+          }
+          return `rgb(var(--nav-color))`;
+        }
       },
       fontFamily: {
         body: ["'M PLUS Rounded 1c'", "sans-serif"],

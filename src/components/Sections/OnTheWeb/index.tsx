@@ -3,7 +3,7 @@ import SectionTitle from "@/components/Section/SectionTitle";
 import { AiFillLinkedin } from "react-icons/ai";
 const OnTheWeb = () => {
   return (
-    <Section>
+    <Section delay={0.3}>
       <SectionTitle underline>On the web</SectionTitle>
       <ul role="list">
         <li>

@@ -3,6 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --text-primary: #252525;
+    --text-primary-inverted: #fff;
+    --text-secondary: #1397cc;
+    --fill-primary: #1fb2c8;
+    --fill-secondary: #d75449;
+    --bg-color: rgba(255, 251, 235);
+    --nav-color: 255, 255, 255;
+  }
+  [data-theme="dark"] {
+    --text-primary: #fff;
+    --text-primary-inverted: #252525;
+    --text-secondary: #1397cc;
+    --fill-primary: #83c9ce;
+    --fill-secondary: #e09794;
+    --bg-color: rgb(37, 37, 37);
+    --nav-color: 37, 37, 37;
+  }
+  html {
+    scroll-behavior: smooth !important;
+    transition: background-color 500ms ease;
+  }
+}
 @layer utilities {
   .underline-offset-6 {
     text-underline-offset: 6px;
@@ -11,13 +35,13 @@
 }
 @layer components {
   .btn {
-    @apply px-2 py-2 rounded-md  transition-colors duration-150 inline-flex items-center justify-center shadow-md;
+    @apply px-2 py-2 font-system rounded-md  inline-flex items-center justify-center shadow-md;
   }
   .btn-lg {
     @apply px-6 py-4 text-xl;
   }
   .btn-primary {
-    @apply bg-primary hover:bg-primary-light text-white;
+    @apply font-semibold  bg-fill-primary hover:-translate-y-1 hover:shadow-lg transition-transform text-primary-inverted;
   }
   .bio-year {
     @apply font-bold flex-nowrap whitespace-nowrap;

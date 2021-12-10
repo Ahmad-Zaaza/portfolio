@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 const Work = () => {
   return (
-    <Section>
+    <Section delay={0.1}>
       <SectionTitle underline>Work</SectionTitle>
       <p>
         Ahmad Zaaza is a self taught web developer based in Dubai, UAE with a
