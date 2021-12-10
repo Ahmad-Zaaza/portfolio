@@ -8,6 +8,7 @@ const OnTheWeb = () => {
       <ul role="list">
         <li>
           <a
+            className="hover:no-underline"
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/ahmad-zaaza-51417b1a1"

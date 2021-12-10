@@ -19,8 +19,8 @@ const ProjectCard = ({
         <a>
           <Image src={thumbnail} alt="title" className="rounded-lg" />
 
-          <h3 className="font-system  text-xl  text-center">{title}</h3>
-          <p className="text-center text-grey-700 font-system">{description}</p>
+          <h3 className="font-medium  text-xl  text-center">{title}</h3>
+          <p className="text-center text-muted font-system">{description}</p>
         </a>
       </Link>
     </div>

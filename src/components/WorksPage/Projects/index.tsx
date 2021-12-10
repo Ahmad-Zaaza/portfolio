@@ -10,16 +10,14 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectCard
           thumbnail={sweetatLogo}
-          description="Sweets shop"
+          description="An online sweets ordering platform active in Kuwait "
           title="Sweetat"
-          // link="https://sweetat.co"
           link="/works/sweetat"
         />
         <ProjectCard
           thumbnail={mrglogo}
-          description="E commerce"
+          description="E-commerce platform for MRG Mall active in Kuwait"
           title="MRG"
-          // link="https://mrg-mall.com"
           link="/works/mrg"
         />
       </div>

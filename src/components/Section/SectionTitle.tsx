@@ -10,8 +10,8 @@ const SectionTitle: React.FC<ISectionTitleProps> = ({
 }) => {
   return (
     <h3
-      className={`${classNames("font-bold font-body text-xl my-4", {
-        "underline underline-offset-6": underline
+      className={`${classNames("font-bold  font-body text-xl my-4", {
+        "underline underline-offset-6 text-primary": underline
       })}`}
     >
       {children}

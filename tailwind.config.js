@@ -13,14 +13,15 @@ module.exports = {
     extend: {
       animation,
       keyframes,
+      colors: {
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)"
+      },
       textColor: {
-        primary: "var(--text-primary)",
-        "primary-inverted": "var(--text-primary-inverted)"
+        inverted: "var(--text-color-inverted)",
+        muted: "var(--text-color-muted)"
       },
       backgroundColor: {
-        primary: "var(--bg-color)",
-        "fill-primary": "var(--fill-primary)",
-        "fill-secondary": "var(--fill-secondary)",
         nav: ({ opacityValue }) => {
           if (opacityValue) {
             return `rgba(var(--nav-color), ${opacityValue})`;

@@ -5,22 +5,30 @@
 
 @layer base {
   :root {
-    --text-primary: #252525;
-    --text-primary-inverted: #fff;
-    --text-secondary: #1397cc;
-    --fill-primary: #1fb2c8;
-    --fill-secondary: #d75449;
+    /* Website colors */
+    --primary-color: #1fb2c8;
+    --secondary-color: #d75449;
+    /* regular text colors */
+    --text-color: #252525;
+    --text-color-inverted: #fff;
+    --text-color-muted: #999999;
     --bg-color: rgba(255, 251, 235);
     --nav-color: 255, 255, 255;
   }
   html[class="dark"] {
-    --text-primary: #fff;
-    --text-primary-inverted: #252525;
-    --text-secondary: #1397cc;
-    --fill-primary: #83c9ce;
-    --fill-secondary: #e09794;
+    /* Website colors */
+    --primary-color: #83c9ce;
+    --secondary-color: #e09794;
+    /* regular text colors */
+    --text-color: #fff;
+    --text-color-inverted: #252525;
+    --text-color-muted: #cdcdcd;
     --bg-color: rgb(37, 37, 37);
     --nav-color: 37, 37, 37;
+  }
+  body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
   }
   html {
     scroll-behavior: smooth !important;
@@ -56,7 +64,7 @@
     @apply px-6 py-4 text-xl;
   }
   .btn-primary {
-    @apply font-semibold  bg-fill-primary hover:-translate-y-1 hover:shadow-lg transition-transform text-primary-inverted;
+    @apply font-semibold  bg-primary hover:-translate-y-1 hover:shadow-lg transition-transform;
   }
   .bio-year {
     @apply font-bold flex-nowrap whitespace-nowrap;

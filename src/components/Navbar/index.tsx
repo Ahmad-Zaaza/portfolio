@@ -41,9 +41,12 @@ const LinkItem: React.FC<{ path: string; href: string }> = ({
   return (
     <Link href={href}>
       <a
-        className={`${classNames("p-2 font-system rounded", {
-          "bg-fill-primary text-primary-inverted": activeLink
-        })}`}
+        className={`${classNames(
+          "p-2 text-sm md:text-base font-system rounded",
+          {
+            "bg-primary text-inverted": activeLink
+          }
+        )}`}
       >
         {children}
       </a>

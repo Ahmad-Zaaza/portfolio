@@ -15,14 +15,14 @@ export const WorkTitle: React.FC = ({ children }) => {
 };
 export const WorkYear: React.FC = ({ children }) => {
   return (
-    <span className="px-1 align-middle rounded text-xs bg-fill-primary text-center">
+    <span className="px-1 align-middle rounded text-xs bg-primary text-center">
       {children}
     </span>
   );
 };
 export const Meta: React.FC = ({ children }) => {
   return (
-    <span className="px-1 font-bold align-middle rounded text-xs inline-block text-primary-inverted bg-fill-secondary uppercase  text-center">
+    <span className="px-1 font-bold align-middle rounded text-xs inline-block text-color-inverted bg-secondary uppercase  text-center">
       {children}
     </span>
   );

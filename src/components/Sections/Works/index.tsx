@@ -5,16 +5,25 @@ import Link from "next/link";
 const Work = () => {
   return (
     <Section delay={0.1}>
-      <SectionTitle underline>Work</SectionTitle>
+      <SectionTitle underline>About</SectionTitle>
       <p>
         Ahmad Zaaza is a self taught web developer based in Dubai, UAE with a
         passion for building user interfaces.
       </p>
+      <br />
       <p>
-        He originally studied dentistry, but when he first came in touch with
-        code
+        He loves creating beautiful and performant websites using his favourate
+        library{" "}
+        <a
+          href="https://reactjs.org"
+          rel="noreferrer"
+          target="_blank"
+          className="text-primary"
+        >
+          React JS
+        </a>
       </p>
-      <div className="text-center mt-2">
+      <div className="text-center mt-6">
         <Link passHref href="/works">
           <button className="btn btn-primary">
             My Portfolio <MdKeyboardArrowRight className="ml-2" size={20} />
