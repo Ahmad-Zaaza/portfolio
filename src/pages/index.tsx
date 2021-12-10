@@ -10,6 +10,7 @@ const Home: NextPage = () => {
         <div className="flex-col md:flex md:justify-between md:items-center md:flex-row ">
           <div>
             <h1 className="font text-4xl font-bold">Ahmad Zaaza</h1>
+
             <p className="font-medium">
               Frontend web developer (React JS / Next js)
             </p>

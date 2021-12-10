@@ -1,6 +1,7 @@
 import { MAX_WIDTH } from "@/lib/constants";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Art from "../Art";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 const MainLayout: NextPage = ({ children }) => {
@@ -27,10 +28,12 @@ const MainLayout: NextPage = ({ children }) => {
         {/* <meta property="og:image" content="/card.png" /> */}
       </Head>
       <Navbar />
-      <div className="h-64"></div>
-      <div className={`container ${MAX_WIDTH} pt-16 pb-8`}>
-        {children}
-        <Footer />
+      <div className={`container ${MAX_WIDTH}`}>
+        <Art />
+        <div className={` pt-16 pb-8`}>
+          {children}
+          <Footer />
+        </div>
       </div>
     </main>
   );

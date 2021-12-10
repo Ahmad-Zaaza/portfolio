@@ -9,7 +9,7 @@ const Navbar: NextPage = () => {
   const history = useRouter();
 
   return (
-    <div className="fixed bg-opacity-75 bg-nav z-[1] backdrop-blur-md  top-0 left-0 right-0">
+    <div className="fixed bg-opacity-25 bg-nav z-[1] backdrop-blur-md  top-0 left-0 right-0">
       <nav className={`container flex items-center ${NAV_MAX_WIDTH} py-4`}>
         <Link href="/">
           <a className="text-xl hover:no-underline font-bold">Ahmad Zaaza</a>

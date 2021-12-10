@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <ThemeProvider attribute="data-theme">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <MainLayout>
         <AnimatePresence exitBeforeEnter initial>
           <Component {...pageProps} key={router.route} />

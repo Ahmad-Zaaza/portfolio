@@ -13,7 +13,7 @@
     --bg-color: rgba(255, 251, 235);
     --nav-color: 255, 255, 255;
   }
-  [data-theme="dark"] {
+  html[class="dark"] {
     --text-primary: #fff;
     --text-primary-inverted: #252525;
     --text-secondary: #1397cc;
@@ -26,11 +26,26 @@
     scroll-behavior: smooth !important;
     transition: background-color 500ms ease;
   }
+  .art-blob {
+    @apply transform-gpu animate-blob w-48  h-48 rounded-full absolute top-24 dark:mix-blend-difference mix-blend-darken filter blur-xl;
+  }
 }
 @layer utilities {
   .underline-offset-6 {
     text-underline-offset: 6px;
     text-decoration-thickness: 4px;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .animation-delay-5000 {
+    animation-delay: 5s;
   }
 }
 @layer components {
