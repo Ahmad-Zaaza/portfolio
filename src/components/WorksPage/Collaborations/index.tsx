@@ -7,7 +7,7 @@ const Collaborations = () => {
   return (
     <Section>
       <SectionTitle>Collaborations</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
         <ProjectCard
           thumbnail={hissahLogo}
           description="Hissah is an educational platform, where students can find online tutors "
