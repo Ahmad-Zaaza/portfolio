@@ -22,7 +22,7 @@ export const WorkYear: React.FC = ({ children }) => {
 };
 export const Meta: React.FC = ({ children }) => {
   return (
-    <span className="px-1 font-bold align-middle rounded text-xs inline-block text-color-inverted bg-secondary uppercase  text-center">
+    <span className="px-1 font-bold align-middle rounded text-xs inline-block text-inverted bg-secondary uppercase  text-center">
       {children}
     </span>
   );

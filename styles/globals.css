@@ -35,7 +35,7 @@
     transition: background-color 500ms ease;
   }
   .art-blob {
-    @apply transform-gpu animate-blob w-48  h-48 rounded-full absolute top-24 dark:mix-blend-difference mix-blend-darken filter blur-xl;
+    @apply isolate transform-gpu animate-blob w-48  h-48 rounded-full absolute top-24 dark:mix-blend-difference mix-blend-normal filter blur-xl;
   }
 }
 @layer utilities {
