@@ -50,7 +50,7 @@ const Bio = () => {
           >
             Tradinos UG
           </a>{" "}
-          as a React Developer for a one two contract.
+          as a React Developer for a two months contract.
         </p>
       </div>
     </Section>
