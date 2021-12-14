@@ -20,7 +20,7 @@ const Mrg = () => {
       <ul className="my-4 grid grid-cols-1 gap-1">
         <li className="flex items-center">
           <Meta>Website</Meta>
-          <a className="ml-4 text-primary" href="https://sweetat.co">
+          <a className="ml-4 text-primary" href="https://hissah.com">
             https://hissah.com <GoLinkExternal className="inline" />
           </a>
         </li>

@@ -20,11 +20,11 @@ const Bio = () => {
         <p>Worked as a dentist.</p>
       </div>
       <div className="bio-section">
-        <span className="bio-year">2/2020</span>
+        <span className="bio-year">8/2019</span>
         <p>Wrote his first line of code.</p>
       </div>
       <div className="bio-section">
-        <span className="bio-year">9/2020 to 12/2021 </span>
+        <span className="bio-year">2/2020 to 12/2021 </span>
         <p>
           Worked at{" "}
           <a
@@ -39,7 +39,7 @@ const Bio = () => {
         </p>
       </div>
       <div className="bio-section">
-        <span className="bio-year">7/2021 to 8/2021 </span>
+        <span className="bio-year">8/2021 to 10/2021 </span>
         <p>
           Worked at{" "}
           <a
