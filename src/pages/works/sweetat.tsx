@@ -21,7 +21,12 @@ const Sweetat = () => {
       <ul className=" my-4 grid grid-cols-1 gap-1">
         <li className="flex items-center">
           <Meta>Website</Meta>
-          <a className="ml-4 text-primary" href="https://sweetat.co">
+          <a
+            className="ml-4 text-primary"
+            target="_blank"
+            rel="noreferrer"
+            href="https://sweetat-vite-develop.vercel.app"
+          >
             https://sweetat.co <GoLinkExternal className="inline" />
           </a>
         </li>
