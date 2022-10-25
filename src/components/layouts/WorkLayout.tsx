@@ -9,6 +9,7 @@ const variants: Variants = {
   exit: { y: 10, opacity: 0 }
 };
 const WorkLayout: React.FC<IWorkLayoutProps> = ({ children, title }) => {
+  
   return (
     <motion.article
       variants={variants}
@@ -19,7 +20,7 @@ const WorkLayout: React.FC<IWorkLayoutProps> = ({ children, title }) => {
       className="font-system"
     >
       <Head>
-        <title>{title} | Ahmad Zaaza</title>
+        <title>{`${title} | Ahmad Zaaza`}</title>
         <meta name="twitter:title" content={title} />
         <meta property="og:title" content={title} />
       </Head>

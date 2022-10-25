@@ -74,9 +74,7 @@
     @apply mb-2;
   }
 }
-html {
-  /* font-family: "M PLUS Rounded 1c", sans-serif; */
-}
+
 a:hover {
   text-decoration: underline;
 }
