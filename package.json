@@ -35,12 +35,12 @@
     "dependencies": {
         "@react-spring/web": "^9.5.5",
         "framer-motion": "^7.6.1",
-        "next": "^12.3.1",
+        "next": "^13.2.4",
         "next-themes": "^0.2.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-hook-form": "^7.38.0",
-        "react-icons": "^4.6.0",
-        "styled-components": "^5.3.6"
+        "react-hook-form": "^7.44.3",
+        "react-icons": "^4.9.0",
+        "styled-components": "^5.3.11"
     }
 }

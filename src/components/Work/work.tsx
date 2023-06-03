@@ -3,8 +3,8 @@ import { BiChevronRight } from "react-icons/bi";
 export const WorkTitle: React.FC = ({ children }) => {
   return (
     <div className="mb-4">
-      <Link href="/works" passHref>
-        <a className="text-primary  inline-block">Works</a>
+      <Link className="text-primary inline-block" href="/works" passHref>
+        Works
       </Link>
       <span>
         <BiChevronRight size={20} className="inline" />

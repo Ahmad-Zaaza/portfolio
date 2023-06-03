@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 interface IProjectCardProps {
   link: string;
   title: string;
@@ -14,14 +14,12 @@ const ProjectCard = ({
   thumbnail
 }: IProjectCardProps) => {
   return (
-    <div className="hover:-translate-y-1  transition-transform ease-in-out duration-300">
+    <div className="transition-transform duration-300 ease-in-out hover:-translate-y-1">
       <Link href={link} passHref>
-        <a>
-          <Image src={thumbnail} alt="title" className="rounded-lg" />
+        <Image src={thumbnail} alt="title" className="rounded-lg" />
 
-          <h3 className="font-medium  text-xl  text-center">{title}</h3>
-          <p className="text-center text-muted font-system">{description}</p>
-        </a>
+        <h3 className="text-xl font-medium text-center">{title}</h3>
+        <p className="text-center text-muted font-system">{description}</p>
       </Link>
     </div>
   );
