@@ -1,9 +1,11 @@
 export type Project = {
   name: string;
   description: string;
-  images: string[];
+  screenshots: string[];
+  mobileScreenshots: string[];
   year: number;
   logo: string;
   slug: string;
   href: string;
+  stack: string[];
 };

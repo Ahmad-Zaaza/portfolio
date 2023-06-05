@@ -10,10 +10,8 @@ const MainLayout: NextPage = ({ children }) => {
       <Navbar />
       <PageContainer>
         <Art />
-        <div className={` pt-16 pb-8`}>
-          {children}
-          <Footer />
-        </div>
+        <div className={`pt-16 pb-8`}>{children}</div>
+        <Footer />
       </PageContainer>
     </main>
   );
@@ -24,5 +22,5 @@ export default MainLayout;
 const PageContainer = styled.div`
   max-width: 512px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px 16px;
 `;

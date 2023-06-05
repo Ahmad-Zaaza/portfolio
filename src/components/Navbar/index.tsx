@@ -18,8 +18,8 @@ const Navbar: NextPage = () => {
           Ahmad Zaaza
         </Link>
         <div className="ml-5">
-          <LinkItem path={history.pathname} href="/works">
-            Works
+          <LinkItem path={history.pathname} href="/projects">
+            Projects
           </LinkItem>
           <LinkItem path={history.pathname} href="/contact">
             Contact

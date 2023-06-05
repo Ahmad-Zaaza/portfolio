@@ -27,7 +27,7 @@ const ProjectCard = ({
         </div>
 
         <h3 className="mt-4 mb-1 text-xl font-medium text-center">{title}</h3>
-        <p className="text-center text-muted font-system">{description}</p>
+        <p className="text-center text-muted font-system line-clamp-3">{description}</p>
       </Link>
     </div>
   );

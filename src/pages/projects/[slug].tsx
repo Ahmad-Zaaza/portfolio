@@ -31,19 +31,44 @@ const Project = ({ project }: PageProps) => {
         </li>
         <li className="flex items-center">
           <Meta>Stack</Meta>
-          <p className="inline ml-4">React, Next js, WebSocket </p>
+          <p className="inline ml-4">
+            {/* @ts-expect-error */}
+            {project.stack.reduce((prev, curr) => [prev, ", ", curr])}
+          </p>
         </li>
       </ul>
       <p>{project.description}</p>
-
-      <SectionTitle underline>Gallery</SectionTitle>
-      <div className="grid grid-cols-1 gap-8 mt-8">
-        {project.images.map(image => (
-          <div key={image} className="relative h-[300px]">
-            <Image src={image} fill className="rounded" alt="mrg-preview" />
+      {project.screenshots.length > 0 && (
+        <>
+          <SectionTitle underline>Screenshots</SectionTitle>
+          <div className="grid grid-cols-1 gap-8 mt-8">
+            {project.screenshots.map(image => (
+              <Image
+                key={image}
+                height={550}
+                src={image}
+                width={450}
+                className="mx-auto rounded"
+                alt="app-screenshot"
+              />
+            ))}
           </div>
-        ))}
-      </div>
+          {project.mobileScreenshots.length > 0 && (
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(210px,1fr))] gap-8 mt-8">
+              {project.mobileScreenshots.map(image => (
+                <Image
+                  key={image}
+                  src={image}
+                  height={450}
+                  width={250}
+                  className="mx-auto rounded"
+                  alt="app-mobile-screenshot"
+                />
+              ))}
+            </div>
+          )}
+        </>
+      )}
     </WorkLayout>
   );
 };

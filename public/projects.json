@@ -2,29 +2,22 @@
   {
     "name": "CrashMania",
     "logo": "/images/crashmania.jpg",
-    "description": "A guessing game based on random numbers that progresses through a series of rounds",
+    "description": "This is a guessing game based on random numbers that progresses through a series of rounds. The goal of this game is to observe the rising Multiplier value, predict at which point it will freeze, and place points based on the prediction. At the beginning of each round, each player will be given a certain amount of points to start with. The starting points will be the same for all players. If a player guessed correctly, they win the round and will gain points calculated by the points placed multiplied by the multiplier (points * multiplier). Otherwise, all points placed are lost",
     "slug": "crash",
-    "images": [],
+    "screenshots": ["/images/crashmania1.png", "/images/crashmania2.png"],
+    "mobileScreenshots": ["/images/crashmania3.png"],
     "year": 2023,
-    "stack": ["React", "Next js", "WebSocket"],
+    "stack": ["React", "Next js", "WebSocket", "Canvas"],
     "href": "https://crashmania-git-new-approach-gencko94.vercel.app/"
   },
-  {
-    "name": "Hissah",
-    "logo": "/images/hissahlogo.jpg",
-    "description": "Hissah is an educational platform, where students can find online tutors",
-    "slug": "hissah",
-    "images": ["/images/hissah1.jpg", "/images/hissah2.jpg"],
-    "year": 2021,
-    "stack": ["React", "Firebase", "PostgreSQL"],
-    "href": "https://www.hissah.com/"
-  },
+
   {
     "name": "Al Danah",
     "logo": "/images/danahlogo.jpg",
     "description": "Official E-commerce website for Al Danah Fisheries in Kuwait",
     "slug": "danah",
-    "images": [],
+    "screenshots": ["/images/danah1.png", "/images/danah2.png"],
+    "mobileScreenshots": ["/images/danah3.png", "/images/danah4.png"],
     "year": 2022,
     "stack": ["React", "React Query"],
     "href": "https://danahfisheries.com/"
@@ -32,11 +25,12 @@
   {
     "name": "Knack UI",
     "logo": "/images/knackuilogo.jpg",
-    "description": "Design system library for Knacklab applications",
+    "description": "Knack-UI is a design system library for Knacklab applications,it's built on top of styled components library. Having the most essential UI primitives and easily integratable with any project",
     "slug": "knack-ui",
-    "images": [],
+    "screenshots": [],
+    "mobileScreenshots": [],
     "year": 2022,
-    "stack": ["React", "React Query"],
+    "stack": ["React", "Styled components", "Storybook", "Webpack", "MDX"],
     "href": "https://knack-ui.vercel.app/"
   },
   {
@@ -44,27 +38,30 @@
     "logo": "/images/sweetatlogo.jpg",
     "description": "An online ordering platform for sweets based in Kuwait",
     "slug": "sweetat",
-    "images": [
-      "/images/sweetat1.png",
-      "/images/sweetat2.png",
-      "/images/sweetat3.png",
-      "/images/sweetat4.png"
-    ],
+    "screenshots": ["/images/sweetat1.png", "/images/sweetat2.png"],
+    "mobileScreenshots": ["/images/sweetat3.png", "/images/sweetat4.png"],
     "year": 2021,
     "stack": ["React", "React Query"],
     "href": "https://sweetat.co/"
+  },
+  {
+    "name": "Hissah",
+    "logo": "/images/hissahlogo.jpg",
+    "description": "Hissah is an educational platform, where students can find online tutors",
+    "slug": "hissah",
+    "screenshots": ["/images/hissah1.jpg", "/images/hissah2.jpg"],
+    "mobileScreenshots": [],
+    "year": 2021,
+    "stack": ["React", "Firebase", "PostgreSQL"],
+    "href": "https://www.hissah.com/"
   },
   {
     "name": "MRG",
     "logo": "/images/mrglogo.jpg",
     "description": "Official E-commerce website for MRG mall in Kuwait",
     "slug": "mrg",
-    "images": [
-      "/images/mrg1.png",
-      "/images/mrg2.png",
-      "/images/mrg3.png",
-      "/images/mrg4.png"
-    ],
+    "screenshots": ["/images/mrg1.png", "/images/mrg2.png"],
+    "mobileScreenshots": ["/images/mrg3.png", "/images/mrg4.png"],
     "year": 2020,
     "stack": ["React", "React Query"],
     "href": "https://www.mrg-mall.com/"
