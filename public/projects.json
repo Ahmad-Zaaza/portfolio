@@ -4,6 +4,69 @@
     "logo": "/images/crashmania.jpg",
     "description": "A guessing game based on random numbers that progresses through a series of rounds",
     "slug": "crash",
-    "images": []
+    "images": [],
+    "year": 2023,
+    "stack": ["React", "Next js", "WebSocket"],
+    "href": "https://crashmania-git-new-approach-gencko94.vercel.app/"
+  },
+  {
+    "name": "Hissah",
+    "logo": "/images/hissahlogo.jpg",
+    "description": "Hissah is an educational platform, where students can find online tutors",
+    "slug": "hissah",
+    "images": ["/images/hissah1.jpg", "/images/hissah2.jpg"],
+    "year": 2021,
+    "stack": ["React", "Firebase", "PostgreSQL"],
+    "href": "https://www.hissah.com/"
+  },
+  {
+    "name": "Al Danah",
+    "logo": "/images/danahlogo.jpg",
+    "description": "Official E-commerce website for Al Danah Fisheries in Kuwait",
+    "slug": "danah",
+    "images": [],
+    "year": 2022,
+    "stack": ["React", "React Query"],
+    "href": "https://danahfisheries.com/"
+  },
+  {
+    "name": "Knack UI",
+    "logo": "/images/knackuilogo.jpg",
+    "description": "Design system library for Knacklab applications",
+    "slug": "knack-ui",
+    "images": [],
+    "year": 2022,
+    "stack": ["React", "React Query"],
+    "href": "https://knack-ui.vercel.app/"
+  },
+  {
+    "name": "Sweetat",
+    "logo": "/images/sweetatlogo.jpg",
+    "description": "An online ordering platform for sweets based in Kuwait",
+    "slug": "sweetat",
+    "images": [
+      "/images/sweetat1.png",
+      "/images/sweetat2.png",
+      "/images/sweetat3.png",
+      "/images/sweetat4.png"
+    ],
+    "year": 2021,
+    "stack": ["React", "React Query"],
+    "href": "https://sweetat.co/"
+  },
+  {
+    "name": "MRG",
+    "logo": "/images/mrglogo.jpg",
+    "description": "Official E-commerce website for MRG mall in Kuwait",
+    "slug": "mrg",
+    "images": [
+      "/images/mrg1.png",
+      "/images/mrg2.png",
+      "/images/mrg3.png",
+      "/images/mrg4.png"
+    ],
+    "year": 2020,
+    "stack": ["React", "React Query"],
+    "href": "https://www.mrg-mall.com/"
   }
 ]

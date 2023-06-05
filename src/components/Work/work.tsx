@@ -3,26 +3,26 @@ import { BiChevronRight } from "react-icons/bi";
 export const WorkTitle: React.FC = ({ children }) => {
   return (
     <div className="mb-4">
-      <Link className="text-primary inline-block" href="/works" passHref>
-        Works
+      <Link className="inline-block text-primary" href="/projects" passHref>
+        Projects
       </Link>
       <span>
         <BiChevronRight size={20} className="inline" />
       </span>
-      <h2 className="font-bold inline text-xl font-body">{children}</h2>
+      <h2 className="inline text-xl font-bold font-body">{children}</h2>
     </div>
   );
 };
 export const WorkYear: React.FC = ({ children }) => {
   return (
-    <span className="px-1 align-middle rounded text-xs bg-primary text-center">
+    <span className="px-1 text-xs text-center align-middle rounded bg-primary">
       {children}
     </span>
   );
 };
 export const Meta: React.FC = ({ children }) => {
   return (
-    <span className="px-1 font-bold align-middle rounded text-xs inline-block text-inverted bg-secondary uppercase  text-center">
+    <span className="inline-block px-1 text-xs font-bold text-center uppercase align-middle rounded text-inverted bg-secondary">
       {children}
     </span>
   );

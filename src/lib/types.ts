@@ -5,4 +5,5 @@ export type Project = {
   year: number;
   logo: string;
   slug: string;
+  href: string;
 };

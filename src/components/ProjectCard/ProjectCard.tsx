@@ -16,7 +16,7 @@ const ProjectCard = ({
   return (
     <div className="transition-transform duration-300 ease-in-out hover:-translate-y-1">
       <Link href={link} passHref>
-        <div className="relative h-[125px]">
+        <div className="relative mx-auto max-w-[225px] h-[125px]">
           <Image
             fill
             src={thumbnail}

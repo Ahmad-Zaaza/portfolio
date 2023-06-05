@@ -19,9 +19,9 @@ const About = () => {
       <br />
 
       <div className="mt-6 text-center">
-        <Link passHref href="/works">
+        <Link passHref href="/projects">
           <button className="btn btn-primary">
-            My Portfolio <MdKeyboardArrowRight className="ml-2" size={20} />
+            My Portfolio <MdKeyboardArrowRight className="ms-2" size={20} />
           </button>
         </Link>
       </div>
