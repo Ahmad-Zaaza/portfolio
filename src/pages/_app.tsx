@@ -4,6 +4,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import GenericSeo from "@/components/GenericSeo";
+
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">

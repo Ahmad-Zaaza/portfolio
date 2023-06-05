@@ -13,9 +13,10 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2">
         <ProjectCard
           thumbnail={crashmania}
-          description="Official E-commerce website for Al Danah Fisheries in Kuwait"
+          description="A guessing game based on random numbers that progresses through a series of
+          rounds."
           title="CrashMania"
-          link="/works/danah"
+          link="/works/crash"
         />
         <ProjectCard
           thumbnail={knackuilogo}

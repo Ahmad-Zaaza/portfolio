@@ -1,0 +1,9 @@
+[
+  {
+    "name": "CrashMania",
+    "logo": "/images/crashmania.jpg",
+    "description": "A guessing game based on random numbers that progresses through a series of rounds",
+    "slug": "crash",
+    "images": []
+  }
+]
