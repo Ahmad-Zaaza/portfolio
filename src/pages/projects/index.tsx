@@ -1,6 +1,5 @@
 import { Project } from "@/lib/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { baseURL } from "@/lib/config";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/Section/SectionTitle";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
@@ -28,11 +27,16 @@ const Projects = ({ projects }: PageProps) => {
 
 export default Projects;
 
+import path from "path";
+import fs from "fs/promises";
 export const getStaticProps: GetStaticProps<{
   projects: Project[];
 }> = async () => {
-  const json = await fetch(`${baseURL}/projects.json`);
-  const projects = await json.json();
+  // const json = await fetch(`${baseURL}/projects.json`);
+  const filePath = path.join(process.cwd(), "projects.json");
+
+  const fileData = await fs.readFile(filePath);
+  const projects = JSON.parse(fileData as any) as Project[];
   return {
     props: { projects }
   };

@@ -1,7 +1,6 @@
 import WorkLayout from "@/components/layouts/WorkLayout";
 import SectionTitle from "@/components/Section/SectionTitle";
 import { Meta, WorkTitle, WorkYear } from "@/components/Work/work";
-import { baseURL } from "@/lib/config";
 import { Project } from "@/lib/types";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
@@ -75,12 +74,18 @@ const Project = ({ project }: PageProps) => {
 
 export default Project;
 
+import path from "path";
+import fs from "fs/promises";
 export const getStaticProps: GetStaticProps<{
   project: Project;
 }> = async ({ params }) => {
-  const json = await fetch(`${baseURL}/projects.json`);
+  const filePath = path.join(process.cwd(), "projects.json");
 
-  const projects = (await json.json()) as Project[];
+  const fileData = await fs.readFile(filePath);
+  const projects = JSON.parse(fileData as any) as Project[];
+  // const json = await fetch(`${baseURL}/projects.json`);
+
+  // const projects = (await json.json()) as Project[];
   const project = projects.find(p => p.slug === params?.slug);
   if (project) {
     return {
@@ -93,8 +98,12 @@ export const getStaticProps: GetStaticProps<{
   }
 };
 export const getStaticPaths: GetStaticPaths = async () => {
-  const json = await fetch(`${baseURL}/projects.json`);
-  const projects = (await json.json()) as Project[];
+  // const json = await fetch(`${baseURL}/projects.json`);
+  // const projects = (await json.json()) as Project[];
+  const filePath = path.join(process.cwd(), "projects.json");
+
+  const fileData = await fs.readFile(filePath);
+  const projects = JSON.parse(fileData as any) as Project[];
   const paths = projects.map(p => ({ params: { slug: p.slug } }));
   return {
     paths,
